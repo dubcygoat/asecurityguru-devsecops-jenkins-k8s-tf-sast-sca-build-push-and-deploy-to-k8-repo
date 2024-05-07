@@ -39,7 +39,7 @@ pipeline {
     	}
 	    
 	   
-	stage('Kubernetes Deployment of goat Bugg Web Application') {
+	stage('Kubernetes Deployment of dubcy Bugg Web Application') {
 	   steps {
 	      withKubeConfig([credentialsId: 'kubelogin']) {
 		  sh('kubectl delete all --all -n devsecops')
